@@ -13,5 +13,27 @@
 // E così via...
 // Rendete il tutto un po più bello e creativo
 
+
+
+
+
+
+
+
+
 // -creo div con dentro img 
 // -creo div con btn
+// -individuo gli elementi con queryselector ---
+// -apro addeventlistener, e cambio l'immagine
+// -
+
+
+const img1Elem = document.getElementById("img1")
+const img2Elem = document.getElementById("img2")
+const btnElem = document.querySelector(".btn")
+
+btnElem.addEventListener("click", function () {
+    btnElem.innerText = "Accendi la luce";
+    img1Elem.classList.add("d-none");
+    img2Elem.classList.remove("d-none")
+})
