@@ -32,8 +32,22 @@ const img1Elem = document.getElementById("img1")
 const img2Elem = document.getElementById("img2")
 const btnElem = document.querySelector(".btn")
 
+let lightOn = true;
+
 btnElem.addEventListener("click", function () {
-    btnElem.innerText = "Accendi la luce";
-    img1Elem.classList.add("d-none");
-    img2Elem.classList.remove("d-none")
+    if (lightOn) {
+
+
+        btnElem.innerText = "Accendi la luce";
+        img1Elem.classList.add("d-none");
+        img2Elem.classList.remove("d-none")
+    }
+
+    else {
+        btnElem.innerText = "Spegni la luce";
+        img1Elem.classList.remove("d-none");
+        img2Elem.classList.add("d-none")
+
+    }
+     lightOn = !lightOn;
 })
