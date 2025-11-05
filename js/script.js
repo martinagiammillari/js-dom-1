@@ -31,23 +31,30 @@
 const img1Elem = document.getElementById("img1")
 const img2Elem = document.getElementById("img2")
 const btnElem = document.querySelector(".btn")
+const bgrImgElem = document.getElementById("background")
 
 let lightOn = true;
 
 btnElem.addEventListener("click", function () {
     if (lightOn) {
-
-
         btnElem.innerText = "Accendi la luce";
         img1Elem.classList.add("d-none");
-        img2Elem.classList.remove("d-none")
+        img2Elem.classList.remove("d-none");
+        bgrImgElem.classList.remove("bgr-img");
+        bgrImgElem.classList.add("bgr-img-buio");
+
+
+
     }
 
     else {
         btnElem.innerText = "Spegni la luce";
         img1Elem.classList.remove("d-none");
-        img2Elem.classList.add("d-none")
+        img2Elem.classList.add("d-none");
+        bgrImgElem.classList.remove("bgr-img-buio");
+        bgrImgElem.classList.add("bgr-img");
+
 
     }
-     lightOn = !lightOn;
+    lightOn = !lightOn;
 })

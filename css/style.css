@@ -1,0 +1,33 @@
+img {
+    max-width: 100%;
+}
+
+
+
+.bgr-img {
+    background-image: url(../img/luce.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+
+.bgr-img-buio {
+    background-image: url(../img/buio.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.small {
+    width: 20%;
+    margin: 60% 0;
+}
+
+.light {
+    transform: rotate(180deg);
+    position: relative;
+    top: -108px
+}
